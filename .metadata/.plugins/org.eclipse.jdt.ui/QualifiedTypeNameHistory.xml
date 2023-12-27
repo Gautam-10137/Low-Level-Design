@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="Model.Board"/>
+    <fullyQualifiedTypeName name="Model.Player"/>
+    <fullyQualifiedTypeName name="Model.PlayingPieceX"/>
+    <fullyQualifiedTypeName name="Model.PlayingPieceO"/>
+    <fullyQualifiedTypeName name="Model.PlayingPiece"/>
+    <fullyQualifiedTypeName name="Model.Pair"/>
+    <fullyQualifiedTypeName name="Model.PieceType"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+</qualifiedTypeNameHistroy>

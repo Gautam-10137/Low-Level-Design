@@ -1,0 +1,10 @@
+import Model.Board;
+import Model.Player;
+import java.util.Deque;
+import java.util.LinkedList;
+public class TicTacToeGame {
+
+	 Board board;
+	 Deque <Player> players;
+	
+}

@@ -1,0 +1,36 @@
+import Model.Board;
+import Model.Player;
+import java.util.Deque;
+import java.util.LinkedList;
+import Model.PlayingPieceX;
+import Model.PlayingPieceO;
+public class TicTacToeGame {
+
+	 Board gameBoard;
+	 Deque <Player> players;
+	 
+	 TicTacToeGame(){
+		 initializeGame();
+	 }
+	
+	 public void initializeGame() {
+		 players=new LinkedList<>();
+		 PlayingPieceX crossPiece=new PlayingPieceX();
+		 Player player1=new Player("Gautam",crossPiece);
+		 
+		 PlayingPieceO noughtPiece= new PlayingPieceO();
+		 Player player2= new Player("Punit",noughtPiece);
+		 
+		 players.add(player1);
+		 players.add(player2);
+	 }
+	 
+	 public String startGame() {
+		 boolean noWinner=true;
+		 while(noWinner) {
+			 
+		 }
+		 
+		 return "";
+	 }
+}
