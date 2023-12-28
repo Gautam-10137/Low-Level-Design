@@ -1,4 +1,4 @@
-<Strong>Low-Level Design </strong>
+<h2>Low-Level Design </h2>
 
 <p>
 Low-level design transforms high-level specifications into detailed software plans by decomposing the system, defining modules, data structures, algorithms, interfaces, and database designs. It emphasizes precise details, error handling, and module-level implementation, facilitating efficient coding of the software system.
