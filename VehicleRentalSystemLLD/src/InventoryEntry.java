@@ -10,4 +10,5 @@ public class InventoryEntry {
     	  this.quantity=quantity;
       }
       
+      
 }

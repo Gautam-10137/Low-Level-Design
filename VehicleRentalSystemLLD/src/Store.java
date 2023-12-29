@@ -8,10 +8,10 @@ public class Store {
     private Location storeLocation;
     private List<Reservation> reservations;
     
-    public Store(int storeId,String storeName,VehicleInventoryManagement inventoryManagement, Location storeLocation) {
+    public Store(int storeId,String storeName, Location storeLocation) {
     	this.storeId=storeId;
     	this.storeName=storeName;
-    	this.inventoryManagement=inventoryManagement;
+    	this.inventoryManagement=new VehicleInventoryManagement();
     	this.storeLocation=storeLocation;
     	this.reservations=new ArrayList<>();
     }
@@ -28,6 +28,9 @@ public class Store {
     	return inventoryManagement;
     }
     
+    public Location getStoreLocation() {
+    	return storeLocation;
+    }
     public List<Reservation> getReservation(){
     	return reservations;
     }

@@ -14,7 +14,7 @@ public class Vehicle {
      int hourlyRentalCost;
      int noOfSeat;
      Status status;
-     Vehicle(){
+     public Vehicle(){
     	 
      }
 //     getters and setters

@@ -8,5 +8,9 @@
     <fullyQualifiedTypeName name="Model.Pair"/>
     <fullyQualifiedTypeName name="Model.PieceType"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="User"/>
+    <fullyQualifiedTypeName name="Product.VehicleType"/>
     <fullyQualifiedTypeName name="Product.Vehicle"/>
+    <fullyQualifiedTypeName name="javax.net.ssl.SSLEngineResult.Status"/>
+    <fullyQualifiedTypeName name="Product.Status"/>
 </qualifiedTypeNameHistroy>
