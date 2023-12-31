@@ -64,7 +64,7 @@ public class Reservation {
     	 }
      }
      private long getDurationInHours() {
-    	 long durationInMillis=this.fromTimeStamp-this.toTimeStamp;
+    	 long durationInMillis=this.toTimeStamp-this.fromTimeStamp;
     	 return durationInMillis/(60*60*1000);
      }
      public String toString() {
