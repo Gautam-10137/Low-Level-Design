@@ -25,7 +25,7 @@ public class VehicleRentalSystem {
       }
       
       
-      private  Store findNearestStore(Location pickUpLocation) {
+      public  Store findNearestStore(Location pickUpLocation) {
     	    if (stores.isEmpty()) {
     	        return null; 
     	    }

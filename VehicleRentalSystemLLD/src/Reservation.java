@@ -18,15 +18,15 @@ public class Reservation {
      public ReservationStatus reservationStatus;
      
      
-     public Reservation(User user, Vehicle vehicle, Date dateBookedFrom ,Date dateBookedTo, Long fromTimeStamp,Long toTimeStamp, Location pickUpLocation, Location dropLocation,ReservationType reservationType) {
+     public Reservation(User user, Vehicle vehicle, Date dateBookedFrom ,Date dateBookedTo, Location pickUpLocation, Location dropLocation,ReservationType reservationType) {
     	 this.reservationId= generateReservationId();
     	 this.user=user;
     	 this.vehicle=vehicle;
     	 this.bookingDate=new Date();
     	 this.dateBookedFrom=dateBookedFrom;
     	 this.dateBookedTo=dateBookedTo;
-    	 this.fromTimeStamp=fromTimeStamp;
-    	 this.toTimeStamp=toTimeStamp;
+    	 this.fromTimeStamp=dateBookedFrom.getTime();
+    	 this.toTimeStamp=dateBookedTo.getTime();
     	 this.pickUpLocation=pickUpLocation;
     	 this.dropLocation=dropLocation;
     	 this.reservationType=reservationType;
@@ -54,7 +54,19 @@ public class Reservation {
     		 System.out.println("Cannot cancel reservation. Status:"+reservationStatus);
     	 }
      }
-     
+     public double calculateTotalCost() {
+    	 long durationInHours=getDurationInHours();
+    	 if(this.reservationType==ReservationType.HOURLY) {
+    		 return durationInHours*this.vehicle.getHourlyRentalCost();
+    	 }
+    	 else {
+    		 return durationInHours/24.0*vehicle.getDailyRentalCost();
+    	 }
+     }
+     private long getDurationInHours() {
+    	 long durationInMillis=this.fromTimeStamp-this.toTimeStamp;
+    	 return durationInMillis/(60*60*1000);
+     }
      public String toString() {
     	 return "Reservation ID: " + reservationId +
                  "\nUser: " + user.username +

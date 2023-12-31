@@ -2,7 +2,7 @@ package Product;
 import java.util.Date;
 public class Vehicle {
      int vehicleId;
-     int vehicleNumber;
+     String vehicleNumber;
      VehicleType vehicleType;
      String companyName;
      String modelName;
@@ -28,10 +28,10 @@ public class Vehicle {
      }
      
 //     vehicleNumber
-     public int getVehicleNumber() {
+     public String getVehicleNumber() {
     	 return vehicleNumber;
      }
-     public void setVehicleNumber(int vehicleNumber) {
+     public void setVehicleNumber(String vehicleNumber) {
     	 this.vehicleNumber=vehicleNumber;
      }
      
