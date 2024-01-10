@@ -1,6 +1,0 @@
-
-public class Main  {
-   TicTacToeGame game=new TicTacToeGame();
-   
-   System.out.println("Game winner is : " + game.startGame());
-}

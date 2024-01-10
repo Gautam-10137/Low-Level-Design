@@ -13,4 +13,9 @@
     <fullyQualifiedTypeName name="javax.net.ssl.SSLEngineResult.Status"/>
     <fullyQualifiedTypeName name="Product.Status"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="Logger.Logger"/>
+    <fullyQualifiedTypeName name="Logger.Info"/>
+    <fullyQualifiedTypeName name="Logger.Debug"/>
+    <fullyQualifiedTypeName name="Logger.Error"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

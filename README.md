@@ -34,3 +34,15 @@ The Parking Lot Management System addresses the challenge of efficiently managin
 <li> The system efficiently handles <strong>pick-up/drop-off, reservation durations,</strong> and operations like <strong>confirmation, cancellation, and viewing.</strong></li>
 <li> It embraces <strong>modularity,</strong> input validation, and enums for clarity, ensuring a seamless vehicle rental experience.</li>
 </p>
+
+<h1>4. Design a Logging System </h1>
+<p>
+ <strong>Problem:</strong>
+ <li>Developing a flexible logging system that accommodates diverse log levels and supports dynamic modification poses a challenge in software development.</li>
+ <li> Traditional approaches lack modularity and make it challenging to extend or modify logging functionalities without altering existing code.</li><br>
+ <strong>Solution:</strong>
+ <li>The Chain of Responsibility design pattern, as implemented in the provided Java code, addresses the logging problem. </li>
+ <li>The Logger hierarchy forms a chain, allowing each logger to process log messages or pass them to the next logger.</li>
+ <li>This approach enables dynamic construction of logging pipelines, promoting modularity and extensibility without modifying the core code.</li> 
+ <li>The open-closed principle is upheld, allowing for seamless addition or modification of logging handlers.</li>
+</p>
